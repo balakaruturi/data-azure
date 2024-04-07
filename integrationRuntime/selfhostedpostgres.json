@@ -1,0 +1,7 @@
+{
+	"name": "selfhostedpostgres",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "going to migrate data from the postgresql to azure blob by using selfhosted compute"
+	}
+}
