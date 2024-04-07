@@ -1,0 +1,62 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "onprem_to_cloud_ingestion"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "blobdatafiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "EMPNO",
+				"type": "String"
+			},
+			{
+				"name": "ENAME",
+				"type": "String"
+			},
+			{
+				"name": "JOB",
+				"type": "String"
+			},
+			{
+				"name": "MGR",
+				"type": "String"
+			},
+			{
+				"name": "HIREDATE",
+				"type": "String"
+			},
+			{
+				"name": "SAL",
+				"type": "String"
+			},
+			{
+				"name": "COMM",
+				"type": "String"
+			},
+			{
+				"name": "DEPTNO",
+				"type": "String"
+			},
+			{
+				"name": "UPDATED_DATE",
+				"type": "String"
+			}
+		]
+	}
+}
