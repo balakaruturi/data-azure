@@ -1,0 +1,6 @@
+{
+	"name": "ONPREMISESSELFHOSTEIR",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
