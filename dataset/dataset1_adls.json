@@ -1,12 +1,12 @@
 {
-	"name": "datalake_Delimited",
+	"name": "dataset1_adls",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "DataLake_storage",
+			"referenceName": "AzureDataLakegen2",
 			"type": "LinkedServiceReference"
 		},
 		"folder": {
-			"name": "adls_to_blob"
+			"name": "adlsgen2_blob"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
@@ -16,7 +16,7 @@
 				"folderPath": "raw",
 				"fileSystem": "adlsgen2data"
 			},
-			"columnDelimiter": "|",
+			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""

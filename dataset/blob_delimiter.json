@@ -6,7 +6,7 @@
 			"type": "LinkedServiceReference"
 		},
 		"folder": {
-			"name": "blob_to_adls"
+			"name": "adls_to_blob"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
