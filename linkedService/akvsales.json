@@ -1,0 +1,10 @@
+{
+	"name": "akvsales",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://akv-sales.vault.azure.net/"
+		}
+	}
+}
