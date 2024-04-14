@@ -1,0 +1,12 @@
+{
+	"name": "weblinkservice",
+	"properties": {
+		"annotations": [],
+		"type": "WebConnection",
+		"typeProperties": {
+			"url": "https://management.azure.com/subscriptions/2a488030-b330-43aa-a4c5-0e821e424643/resourceGroups/activity-rg/providers/Microsoft.Sql/servers/ssmsactivity/databases/datawarehouse/pause?api-version=2014-04-01-preview",
+			"enableServerCertificateValidation": false,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
