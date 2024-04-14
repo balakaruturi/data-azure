@@ -116,10 +116,6 @@
 									"referenceName": "adlsdatamigrate",
 									"type": "DatasetReference",
 									"parameters": {
-										"source_folder": {
-											"value": "@pipeline().parameters.source_folder",
-											"type": "Expression"
-										},
 										"source_file": {
 											"value": "@item().name",
 											"type": "Expression"
@@ -130,17 +126,7 @@
 							"outputs": [
 								{
 									"referenceName": "blobdatamigrate",
-									"type": "DatasetReference",
-									"parameters": {
-										"target_folder": {
-											"value": "@pipeline().parameters.source_folder",
-											"type": "Expression"
-										},
-										"target_file": {
-											"value": "@item().name",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								}
 							]
 						}
