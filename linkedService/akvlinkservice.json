@@ -1,0 +1,10 @@
+{
+	"name": "akvlinkservice",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://akv-data.vault.azure.net/"
+		}
+	}
+}
