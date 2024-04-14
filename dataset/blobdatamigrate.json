@@ -1,0 +1,36 @@
+{
+	"name": "blobdatamigrate",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Azbloblinked",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"target_folder": {
+				"type": "string"
+			},
+			"target_file": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "salesdataset"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().target_file",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "dataset().target_folder",
+					"type": "Expression"
+				},
+				"container": "newdata"
+			}
+		}
+	}
+}
